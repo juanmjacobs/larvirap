@@ -12,7 +12,7 @@ function App() {
       const y = Math.floor(Math.random() * 350) 
       const larvaDiv = document.createElement("div");
       const dirtyThingIndex = Math.floor(Math.random()* dirtyThings.length)
-      larvaDiv.innerText = dirtyThings[dirtyThingIndex] || "LARVA";
+      larvaDiv.innerHTML = `${dirtyThings[dirtyThingIndex] || "LARVA"} <i class="fa fa-trash" style="border-bottom:1px solid black"></i>`;
       larvaDiv.className ="larva";
       larvaDiv.style = `position: absolute; left:${x}px; top:${y}px; background-color:#ECFF33; font-size: 15px; padding: 10px;cursor: pointer`;
       planeContainer.appendChild(larvaDiv)

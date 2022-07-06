@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div id="logo"  >
-        <img src="/larverap.jpg"></img>
+        <img src="/larverap.jpg" alt="logo"></img>
         </div>
       <div id="plane-container" className='plane-container' >
         <img width={"100%"} height={"100%"} src="https://wpmedia.roomsketcher.com/content/uploads/2022/01/05101816/RoomSketcher-Custom-2D-Floor-Plan-Branding.jpg" alt="House plane"></img>

@@ -6,10 +6,10 @@ const dirtyThings = ["LARVA", "MAGIA RITUAL", "BLOQUEO ENERGÉTICO", "ALMA PERDI
 function App() {
   useEffect(() => {
     const planeContainer = document.getElementById("plane-container");
-    const larvaAmount = Math.floor(Math.random() * 3) + 3 ;
+    const larvaAmount = Math.floor(Math.random() * 3) + 2;
     for(let i = 0; i < larvaAmount; i++) {
-      const x = Math.floor(Math.random() *700) + 150
-      const y = Math.floor(Math.random() * 700) + 150
+      const x = Math.floor(Math.random() *250) 
+      const y = Math.floor(Math.random() * 350) 
       const larvaDiv = document.createElement("div");
       const dirtyThingIndex = Math.floor(Math.random()* dirtyThings.length)
       larvaDiv.innerText = dirtyThings[dirtyThingIndex] || "LARVA";
